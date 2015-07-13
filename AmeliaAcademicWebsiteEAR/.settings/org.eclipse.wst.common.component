@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="AmeliaAcademicWebsiteEAR">
+        <wb-resource deploy-path="/" source-path="/EarContent" tag="defaultRootSource"/>
+        <dependent-module archiveName="AmeliasAcademicWebsiteModelTest.jar" deploy-path="/lib" handle="module:/resource/AmeliasAcademicWebsiteModelTest/AmeliasAcademicWebsiteModelTest">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="AmeliasAcademicWebsiteModel.jar" deploy-path="/lib" handle="module:/resource/AmeliasAcademicWebsiteModel/AmeliasAcademicWebsiteModel">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="AmeliaAcademicWebsiteWeb.war" deploy-path="/" handle="module:/resource/AmeliaAcademicWebsiteWeb/AmeliaAcademicWebsiteWeb">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>
