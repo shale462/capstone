@@ -14,5 +14,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry combineaccessrules="false" kind="src" path="/AmeliasAcademicWebsiteModel"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/AmeliasAcademicWebsiteModelTest"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
