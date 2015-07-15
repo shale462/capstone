@@ -11,6 +11,7 @@ public class Survey {
 	private String description;
 	private Date dateCreated;
 	private Boolean isActive;
+	private Boolean isHistoricalInterview;
 	private List<Question> questions;
 
 	public Integer getSurveyID() {
@@ -51,6 +52,14 @@ public class Survey {
 
 	public void setIsActive(Boolean isActive) {
 		this.isActive = isActive;
+	}
+
+	public Boolean getIsPublic() {
+		return isHistoricalInterview;
+	}
+
+	public void setIsPublic(Boolean isPublic) {
+		this.isHistoricalInterview = isPublic;
 	}
 
 	public List<Question> getQuestions() {

@@ -9,7 +9,7 @@ package com.academicwebsite.model;
  */
 public class Profile {
 	
-	private 
+	 
 	
 
 }
