@@ -5,10 +5,10 @@ package com.academicwebsite.model;
  *
  */
 public class User {
-	
-	// declare variable for email of user with getter and setter methods	
+
 	private String email;
-	
+	private String password;
+
 	public String getEmail() {
 		return email;
 	}
@@ -16,11 +16,7 @@ public class User {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	
-	
-	// declare variable for password of user with getter and setter methods
-	private String password;
-	
+
 	public String getPassword() {
 		return password;
 	}
@@ -28,21 +24,16 @@ public class User {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	
-	
-	public User()
-	{
+
+	public User() {
 		email = "";
 		password = "";
-	
+
 	}
-	
-	public User(String email, String password)
-	{
+
+	public User(String email, String password) {
 		this.email = email;
 		this.password = password;
 	}
-	
-
 
 }
