@@ -61,10 +61,10 @@ public class Answer {
 	public Answer() {
 		answerID = 0;
 		questionID = 0;
-		surveyID=0;
+		surveyID = 0;
 	}
 
-	public Answer(Integer answerID, Integer questionID, Integer surveyID){
+	public Answer(Integer answerID, Integer questionID, Integer surveyID) {
 		this.answerID = answerID;
 		this.questionID = questionID;
 		this.surveyID = surveyID;
