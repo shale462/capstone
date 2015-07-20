@@ -21,13 +21,13 @@ import com.academicwebsite.model.Question;
  */
 public class QuestionTests {
 
-	Question question;
-	Answer answer;
-	Integer questionID;
-	Integer surveyID;
-	Integer type;
-	List<Answer> answers;
-	String questionString;
+	private Question question;
+	private Answer answer;
+	private Integer questionID;
+	private Integer surveyID;
+	private Integer type;
+	private List<Answer> answers;
+	private String questionString;
 
 	/**
 	 * @throws java.lang.Exception
