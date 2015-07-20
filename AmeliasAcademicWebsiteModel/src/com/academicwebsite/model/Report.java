@@ -7,7 +7,6 @@ public class Report {
 	private String reportName;
 	private String description;
 	private Date reportDate;
-	private String sqlStatement;
 
 	public Integer getReportID() {
 		return reportID;
@@ -41,22 +40,12 @@ public class Report {
 		this.reportDate = reportDate;
 	}
 
-	public String getSqlStatement() {
-		return sqlStatement;
-	}
-
-	public void setSqlStatement(String sqlStatement) {
-		this.sqlStatement = sqlStatement;
-	}
-
 	public Report() {
 		reportID = 0;
-		sqlStatement = "";
 	}
 
-	public Report(Integer reportID, String sqlStatement) {
+	public Report(Integer reportID) {
 		this.reportID = reportID;
-		this.sqlStatement = sqlStatement;
 	}
 
 }

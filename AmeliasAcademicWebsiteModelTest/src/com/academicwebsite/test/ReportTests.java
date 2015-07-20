@@ -2,73 +2,80 @@ package com.academicwebsite.test;
 
 import static org.junit.Assert.*;
 
+import java.util.Date;
+
 import org.junit.Before;
 import org.junit.Test;
 
+import com.academicwebsite.model.Report;
+
 public class ReportTests {
+	Report report;
 
 	@Before
 	public void setUp() throws Exception {
+		report = new Report();
 	}
 
 	@Test
 	public void testGetReportID() {
-		fail("Not yet implemented");
+		assertSame(0, report.getReportID());
 	}
 
 	@Test
 	public void testSetReportID() {
-		fail("Not yet implemented");
+		Integer newID = 2;
+		report.setReportID(newID);
+		assertEquals(newID, report.getReportID());
 	}
 
 	@Test
 	public void testGetReportName() {
-		fail("Not yet implemented");
+		assertNull(report.getReportName());
 	}
 
 	@Test
 	public void testSetReportName() {
-		fail("Not yet implemented");
+		String reportName = "Report Name";
+		report.setReportName(reportName);
+		assertEquals(reportName, report.getReportName());
 	}
 
 	@Test
 	public void testGetDescription() {
-		fail("Not yet implemented");
+		assertNull(report.getDescription());
 	}
 
 	@Test
 	public void testSetDescription() {
-		fail("Not yet implemented");
+		String description = "report description";
+		report.setDescription(description);
+		assertEquals(description, report.getDescription());
 	}
 
 	@Test
 	public void testGetReportDate() {
-		fail("Not yet implemented");
+		assertNull(report.getReportDate());
 	}
 
 	@Test
 	public void testSetReportDate() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testGetSqlStatement() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testSetSqlStatement() {
-		fail("Not yet implemented");
+		Date reportDate = new Date();
+		report.setReportDate(reportDate);
+		assertEquals(reportDate, report.getReportDate());
 	}
 
 	@Test
 	public void testReport() {
-		fail("Not yet implemented");
+		Report report1=new Report();
+		assertNotNull(report1);
 	}
 
 	@Test
 	public void testReportIntegerString() {
-		fail("Not yet implemented");
+		Integer reportID = 1;
+		Report report1 = new Report(reportID);
+		assertNotNull(report1);
 	}
 
 }
