@@ -1,6 +1,5 @@
 package com.academicwebsite.model;
 
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -11,6 +10,7 @@ public class Survey {
 	private String description;
 	private Date dateCreated;
 	private Boolean isActive;
+	private Boolean isHistoricalInterview;
 	private List<Question> questions;
 
 	public Integer getSurveyID() {
@@ -53,6 +53,14 @@ public class Survey {
 		this.isActive = isActive;
 	}
 
+	public Boolean getIsHistoricalInterview() {
+		return isHistoricalInterview;
+	}
+
+	public void setIsHistoricalInterview(Boolean isHistoricalInterview) {
+		this.isHistoricalInterview = isHistoricalInterview;
+	}
+
 	public List<Question> getQuestions() {
 		return questions;
 	}
@@ -63,16 +71,9 @@ public class Survey {
 
 	public Survey() {
 		surveyID = 0;
-		title = "";
-		description = "";
-		questions = new ArrayList<Question>();
 	}
 
-	public Survey(int surveyID, String title, String description,
-			List<Question> questions) {
+	public Survey(int surveyID) {
 		this.surveyID = surveyID;
-		this.title = title;
-		this.description = description;
-		this.questions = questions;
 	}
 }
