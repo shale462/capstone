@@ -37,7 +37,8 @@
 	<div id="MainBodyDiv">
 		<h3>Login</h3>
 		<br />
-		<form action="">
+		<form name="login" method="post" 
+		action="Servlet">
 		  <label for="Username">Username:</label>
 		  <input type="text" name="username" id="username" value="username"><br>
 		  <label for="Password">Password:</label>
