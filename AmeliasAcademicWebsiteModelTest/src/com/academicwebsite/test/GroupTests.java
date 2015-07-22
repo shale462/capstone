@@ -5,20 +5,31 @@ package com.academicwebsite.test;
 
 import static org.junit.Assert.*;
 
+import java.util.ArrayList;
+
 import org.junit.Before;
 import org.junit.Test;
+
+import com.academicwebsite.model.Group;
+import com.academicwebsite.model.User;
 
 /**
  * @author Liz
  *
  */
 public class GroupTests {
+	
+	Group group;
+	int groupsID;
+	String groupName;
+	String description;
 
 	/**
 	 * @throws java.lang.Exception
 	 */
 	@Before
 	public void setUp() throws Exception {
+		group = new Group();
 	}
 
 	/**
@@ -26,7 +37,10 @@ public class GroupTests {
 	 */
 	@Test
 	public void testGetGroupID() {
-		fail("Not yet implemented");
+		
+		groupsID = 1;
+		group.setGroupID(groupsID);
+		assertEquals(groupsID, group.getGroupID());
 	}
 
 	/**
@@ -34,7 +48,10 @@ public class GroupTests {
 	 */
 	@Test
 	public void testSetGroupID() {
-		fail("Not yet implemented");
+		
+		groupsID = 1;
+		group.setGroupID(groupsID);
+		assertEquals(groupsID, group.getGroupID());
 	}
 
 	/**
@@ -42,7 +59,10 @@ public class GroupTests {
 	 */
 	@Test
 	public void testGetGroupName() {
-		fail("Not yet implemented");
+		
+		groupName = "Group One";
+		group.setGroupName(groupName);
+		assertEquals(groupName, group.getGroupName());
 	}
 
 	/**
@@ -50,7 +70,10 @@ public class GroupTests {
 	 */
 	@Test
 	public void testSetGroupName() {
-		fail("Not yet implemented");
+		
+		groupName = "Group One";
+		group.setGroupName(groupName);
+		assertEquals(groupName, group.getGroupName());
 	}
 
 	/**
@@ -58,7 +81,10 @@ public class GroupTests {
 	 */
 	@Test
 	public void testGetDescription() {
-		fail("Not yet implemented");
+		
+		description = "This is a description";
+		group.setDescription(description);
+		assertEquals(description, group.getDescription());
 	}
 
 	/**
@@ -66,7 +92,10 @@ public class GroupTests {
 	 */
 	@Test
 	public void testSetDescription() {
-		fail("Not yet implemented");
+		
+		description = "This is a description";
+		group.setDescription(description);
+		assertEquals(description, group.getDescription());
 	}
 
 	/**
@@ -74,7 +103,10 @@ public class GroupTests {
 	 */
 	@Test
 	public void testGetUsers() {
-		fail("Not yet implemented");
+		
+		ArrayList<User> users = new ArrayList<User>();
+		group.setUsers(users);
+		assertEquals(users,group.getUsers());
 	}
 
 	/**
@@ -82,7 +114,10 @@ public class GroupTests {
 	 */
 	@Test
 	public void testSetUsers() {
-		fail("Not yet implemented");
+		
+		ArrayList<User> users = new ArrayList<User>();
+		group.setUsers(users);
+		assertEquals(users,group.getUsers());
 	}
 
 	/**
@@ -90,7 +125,9 @@ public class GroupTests {
 	 */
 	@Test
 	public void testGroup() {
-		fail("Not yet implemented");
+		
+		group = new Group();
+		assertNotNull(group);
 	}
 
 	/**
@@ -98,7 +135,8 @@ public class GroupTests {
 	 */
 	@Test
 	public void testGroupIntegerString() {
-		fail("Not yet implemented");
+		group = new Group(1, "Group", "This is a group");
+		assertNotNull(group);
 	}
 
 }

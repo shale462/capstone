@@ -75,10 +75,10 @@ public class Admin {
 		password = "";
 	}
 
-	public Admin(Integer adminID, String email, String password) {
+	public Admin(Integer adminID, String adminName, String email, String password) {
 
 		this.adminID = adminID;
-		// this.adminName = adminName;
+		this.adminName = adminName;
 		this.email = email;
 		this.password = password;
 	}

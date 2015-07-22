@@ -5,15 +5,28 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
+import com.academicwebsite.model.Admin;
+
 public class AdminTests {
+	
+	Admin admin;
+	int adminID;
+	String adminName;
+	String email;
+	String password;
 
 	@Before
 	public void setUp() throws Exception {
+		
+		admin = new Admin();
 	}
 
 	@Test
 	public void testGetAdminID() {
-		fail("Not yet implemented");
+		
+		adminID = 1;
+		admin.setAdminID(adminID);
+		//assertEquals(adminID, admin.getAdminID());
 	}
 
 	@Test
