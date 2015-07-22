@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Group {
 
-	private Integer groupID;
+	private int groupID;
 	private String groupName;
 	private String description;
 	private ArrayList<User> users;
@@ -12,7 +12,7 @@ public class Group {
 	/**
 	 * @return the groupID
 	 */
-	public Integer getGroupID() {
+	public int getGroupID() {
 		return groupID;
 	}
 
@@ -20,7 +20,7 @@ public class Group {
 	 * @param groupID
 	 *            the groupID to set
 	 */
-	public void setGroupID(Integer groupID) {
+	public void setGroupID(int groupID) {
 		this.groupID = groupID;
 	}
 
@@ -72,15 +72,15 @@ public class Group {
 	public Group() {
 		groupID = 0;
 		groupName = "";
-		// description = "";
-		// users = null;
+		description = "";
+		//users = null;
 
 	}
 
-	public Group(Integer groupID, String groupName) {
+	public Group(int groupID, String groupName, String description) {
 		this.groupID = groupID;
 		this.groupName = groupName;
-		// description = "";
+		this.description = "";
 		// users = null;
 
 	}

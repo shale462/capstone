@@ -3,18 +3,18 @@ package com.academicwebsite.model;
 import java.util.Date;
 
 public class PublishedWork {
-	private Integer pubWorkID;
+	private int pubWorkID;
 	private String title;
 	private String author;
 	private String fileLocation;
 	private Date dateCreated;
 	private Date datePosted;
 
-	public Integer getPubWorkID() {
+	public int getPubWorkID() {
 		return pubWorkID;
 	}
 
-	public void setPubWorkID(Integer pubWorkID) {
+	public void setPubWorkID(int pubWorkID) {
 		this.pubWorkID = pubWorkID;
 	}
 
@@ -63,8 +63,13 @@ public class PublishedWork {
 		fileLocation = "";
 	}
 
-	public PublishedWork(Integer pubWorkID, String fileLocation) {
+	public PublishedWork(int pubWorkID, String title, String author,
+			String fileLocation, Date dateCreated, Date datePosted) {
 		this.pubWorkID = pubWorkID;
+		this.title = title;
+		this.author = author;
 		this.fileLocation = fileLocation;
+		this.dateCreated = dateCreated;
+		this.datePosted = datePosted;
 	}
 }
