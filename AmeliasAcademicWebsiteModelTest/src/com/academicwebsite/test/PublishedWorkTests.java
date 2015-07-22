@@ -12,7 +12,11 @@ import com.academicwebsite.model.PublishedWork;
 public class PublishedWorkTests {
 	PublishedWork publishedWork;
 	String fileLocation;
-	Integer pubWorkID;
+	int pubWorkID;
+	String title;
+	String author;
+	Date dateCreated;
+	Date datePosted;
 
 	@Before
 	public void setUp() throws Exception {
@@ -99,7 +103,8 @@ public class PublishedWorkTests {
 
 	@Test
 	public void testPublishedWorkIntegerString() {
-		PublishedWork pubWork = new PublishedWork(pubWorkID, fileLocation);
+		PublishedWork pubWork = new PublishedWork(pubWorkID, title, author,
+				fileLocation, dateCreated, datePosted);
 		assertNotNull(pubWork);
 	}
 

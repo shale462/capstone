@@ -80,7 +80,7 @@ public class Group {
 	public Group(int groupID, String groupName, String description) {
 		this.groupID = groupID;
 		this.groupName = groupName;
-		this.description = "";
+		this.description = description;
 		// users = null;
 
 	}

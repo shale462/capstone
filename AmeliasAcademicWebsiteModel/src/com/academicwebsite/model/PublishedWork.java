@@ -60,7 +60,11 @@ public class PublishedWork {
 
 	public PublishedWork() {
 		pubWorkID = 0;
+		title = "";
+		author = "";
 		fileLocation = "";
+		dateCreated = null;
+		datePosted = null;
 	}
 
 	public PublishedWork(int pubWorkID, String title, String author,
